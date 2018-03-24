@@ -1,18 +1,11 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/krisKurken/Iplay/master/public/themes/Iplay/screenshot.png" height="400px">
 </p>
-A modern WordPress stack built with Composer. It simplifies the fuzziness around WordPress development.
+A website made for the Iplay app, using [wordpress](https://wordpress.org) and [wordplate](https://wordplate.github.io)
 
 ```sh
 $ composer create-project wordplate/wordplate
 ```
-
-[![Build Status](https://img.shields.io/travis/wordplate/framework/master.svg?style=flat)](https://travis-ci.org/wordplate/framework)
-[![StyleCI](https://styleci.io/repos/13329845/shield?style=flat)](https://styleci.io/repos/13329845)
-[![Coverage Status](https://img.shields.io/codecov/c/github/wordplate/framework.svg?style=flat)](https://codecov.io/github/wordplate/framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/wordplate/framework.svg?style=flat)](https://packagist.org/packages/wordplate/framework)
-[![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
-[![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
 
 ## Documentation
 
