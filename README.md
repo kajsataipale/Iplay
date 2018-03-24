@@ -27,8 +27,8 @@ Visit the [official documentation](https://wordplate.github.io/docs/introduction
 
 
 ## Developers:
-[Kristian Liljander](https://github.com/krisKurken)
-[Kajsa Taipale](https://github.com/kajsataipale)
+  [Kristian Liljander](https://github.com/krisKurken)
+  [Kajsa Taipale](https://github.com/kajsataipale)
 
 ## License
 
