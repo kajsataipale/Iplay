@@ -21,11 +21,11 @@ A website made for the Iplay app, using [wordpress](https://wordpress.org/) and 
 - Create a new textfile in the root of the project and name it .env
 - Copy the content from the file .env.example (located in the root) and paste it in the file you just created
 
-#### Developers:  
+### Developers:  
 [Kristian Liljander](https://github.com/krisKurken)  
 [Kajsa Taipale](https://github.com/kajsataipale)  
 
-#### Designers:
+### Designers:
 Vigfus Valgeirsson  
 Sarah Nyman  
 
