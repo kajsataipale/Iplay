@@ -12,7 +12,7 @@ $ composer create-project wordplate/wordplate
 
 ### Setup
 - Download or clone project.
-- Make sure you have [composer](https://github.com/composer/composer) and [node](https://github.com/nodejs/node) [npm](https://docs.npmjs.com/) installed.
+- Make sure you have [composer](https://github.com/composer/composer) and [npm](https://docs.npmjs.com/) installed.
 - Navigate with the command prompt to the root file of the project.
 - Run commands:
 ```sh
