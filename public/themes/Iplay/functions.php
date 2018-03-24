@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-require template_path('plate.php');
+require template_path('includes/plugins/plate.php');
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
 
 });
-
 
 // Enqueue styles and scripts the right way.
 add_action('wp_enqueue_scripts', function () {
