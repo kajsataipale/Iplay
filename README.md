@@ -34,4 +34,4 @@ Sarah Nyman
 
 ## License
 
-[MIT](LICENSE)
+[MIT License](LICENSE)
