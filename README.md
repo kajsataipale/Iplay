@@ -1,4 +1,3 @@
-![Iplay](https://raw.githubusercontent.com/krisKurken/Iplay/master/public/themes/Iplay/screenshot.png)
 <p align="center">
 <img src="https://raw.githubusercontent.com/krisKurken/Iplay/master/public/themes/Iplay/screenshot.png" height="500px">
 </p>
