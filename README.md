@@ -25,8 +25,11 @@ Visit the [official documentation](https://wordplate.github.io/docs/introduction
  -->
 ## Contributing
 
-Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
+
+## Developers:
+[Kristian Liljander](https://github.com/krisKurken)
+[Kajsa Taipale](https://github.com/kajsataipale)
 
 ## License
 
-[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
+[MIT](LICENSE)
