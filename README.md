@@ -27,11 +27,11 @@ Visit the [official documentation](https://wordplate.github.io/docs/introduction
 
 
 ## Team:
-###Developers:
+###Developers:  
 [Kristian Liljander](https://github.com/krisKurken)  
-[Kajsa Taipale](https://github.com/kajsataipale)
+[Kajsa Taipale](https://github.com/kajsataipale)  
 ###Designers:
-Vigfus Valgeirsson
+Vigfus Valgeirsson  
 Sarah Nyman
 ## License
 
