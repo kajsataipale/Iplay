@@ -26,7 +26,7 @@ Visit the [official documentation](https://wordplate.github.io/docs/introduction
 ## Contributing
 
 
-## Team
+
 
 ###Developers:  
 [Kristian Liljander](https://github.com/krisKurken)  
