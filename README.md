@@ -10,8 +10,15 @@ $ composer create-project wordplate/wordplate
 
 ## Documentation
 
-Visit the [official documentation](https://wordplate.github.io/docs/introduction) page if you want to dive right in and start building WordPress applications with WordPlate. The documentation is thorough, complete, and makes it a breeze to get started learning WordPlate.
+### Setup
+- Download or clone project.
+- Make sure you have [composer](https://github.com/composer/composer) and [node](https://github.com/nodejs/node) [npm](https://docs.npmjs.com/) installed.
+- Navigate with the command prompt to the root file of the project.
 
+- W
+<!--
+Visit the [official documentation](https://wordplate.github.io/docs/introduction) page if you want to dive right in and start building WordPress applications with WordPlate. The documentation is thorough, complete, and makes it a breeze to get started learning WordPlate.
+ -->
 ## Contributing
 
 Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
