@@ -1,6 +1,6 @@
 # WordPlate
 
-[![WordPlate]()
+[![Iplay]()
 
 A modern WordPress stack built with Composer. It simplifies the fuzziness around WordPress development.
 
