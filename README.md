@@ -9,7 +9,7 @@ A website made for the Iplay app, using [wordpress](https://wordpress.org/) and 
 ## Documentation
 
 ### Setup
-- Download or clone project
+- Download or clone the project
 - Make sure you have [composer](https://github.com/composer/composer) and [npm](https://docs.npmjs.com/) installed
 - Navigate with the command prompt to the root file of the project
 - Run commands:
@@ -20,7 +20,7 @@ A website made for the Iplay app, using [wordpress](https://wordpress.org/) and 
 ```
 - Create a new textfile in the root of the project and name it .env
 - Copy the content from the file .env.example (located in the project root) and paste it in the file you just created
-- Run server from the public map in the project-root, for example by using [php-built in server](http://php.net/manual/en/features.commandline.webserver.php) 
+- Run server from the public map in the project-root, for example by using [php-built in server](http://php.net/manual/en/features.commandline.webserver.php)
 
 ### Developers:  
 [Kristian Liljander](https://github.com/krisKurken)  
