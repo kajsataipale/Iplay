@@ -15,9 +15,12 @@ $ composer create-project wordplate/wordplate
 - Make sure you have [composer](https://github.com/composer/composer) and [node](https://github.com/nodejs/node) [npm](https://docs.npmjs.com/) installed.
 - Navigate with the command prompt to the root file of the project.
 - Run
-  - $ composer install
-  - $ npm install
-  - $ npm run prod
+```sh
+  $ composer install
+  $ npm install
+  $ npm run prod
+```
+
 <!--
 Visit the [official documentation](https://wordplate.github.io/docs/introduction) page if you want to dive right in and start building WordPress applications with WordPlate. The documentation is thorough, complete, and makes it a breeze to get started learning WordPlate.
  -->
