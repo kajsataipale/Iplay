@@ -20,7 +20,7 @@ A website made for the Iplay app, using [wordpress](https://wordpress.org/) and 
 ```
 - Create a new textfile in the root of the project and name it .env
 - Copy the content from the file .env.example (located in the project root) and paste it in the file you just created
-- Run server from the public map in the project-root 
+- Run server from the public map in the project-root, for example by using [php-built in server](http://php.net/manual/en/features.commandline.webserver.php) 
 
 ### Developers:  
 [Kristian Liljander](https://github.com/krisKurken)  
