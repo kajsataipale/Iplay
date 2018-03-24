@@ -1,5 +1,7 @@
 ![Iplay](https://raw.githubusercontent.com/krisKurken/Iplay/master/public/themes/Iplay/screenshot.png)
-<img src="https://raw.githubusercontent.com/krisKurken/Iplay/master/public/themes/Iplay/screenshot.png" height="400px" width="800px">
+<p align="center">
+<img src="https://raw.githubusercontent.com/krisKurken/Iplay/master/public/themes/Iplay/screenshot.png" height="500px">
+</p>
 A modern WordPress stack built with Composer. It simplifies the fuzziness around WordPress development.
 
 ```sh
