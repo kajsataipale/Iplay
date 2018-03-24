@@ -26,13 +26,12 @@ Visit the [official documentation](https://wordplate.github.io/docs/introduction
 ## Contributing
 
 
-
-
-###Developers:  
+## Team
+### Developers:  
 [Kristian Liljander](https://github.com/krisKurken)  
 [Kajsa Taipale](https://github.com/kajsataipale)  
 
-###Designers:
+### Designers:
 Vigfus Valgeirsson  
 Sarah Nyman  
 
