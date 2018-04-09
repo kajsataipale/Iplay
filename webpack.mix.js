@@ -21,4 +21,21 @@ mix.setPublicPath(`public/themes/${theme}/assets`);
 mix.js('resources/assets/scripts/app.js', 'scripts');
 mix.sass('resources/assets/styles/app.scss', 'styles');
 
+// mix.browserSync({
+//   proxy: 'localhost:9001',
+//   files: [
+//     './public/**'
+//   ]
+// });
+
+// mix.browserSync({
+//     proxy: '127.0.0.1',
+//
+// })
+
+// mix.browserSync('127.0.0.1');
+// mix.sourceMaps();
+
+mix.browserSync('http://localhost:8888');
+
 mix.version();
