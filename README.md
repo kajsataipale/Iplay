@@ -11,7 +11,7 @@ A website made for the Iplay app, using [wordpress](https://wordpress.org/) and 
 ### Setup
 - Download or clone the project
 - Make sure you have [composer](https://github.com/composer/composer) and [npm](https://docs.npmjs.com/) installed
-- Rename the env.example file to .env located in the project root.
+- Rename the env.example file (located in the project root) to .env
 - Navigate with the command prompt to the root file of the project
 - Run commands:
 ```sh
