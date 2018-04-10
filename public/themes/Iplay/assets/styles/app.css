@@ -1,0 +1,133 @@
+.home_button_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+
+.home_button_wrap div:nth-child(2) {
+  border-left: 1px solid #ffc266;
+  border-right: 1px solid #ffc266;
+}
+
+.home_button_wrap .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 11.1px;
+  font-family: Helvetica;
+  background: #EA8C45;
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.home_button_wrap .button span {
+  -webkit-transform: skewX(20deg);
+  transform: skewX(20deg);
+}
+
+.home_wrapper {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.home_header_text {
+  color: white;
+  font-size: 18.5px;
+  text-align: center;
+  font-family: 'third_rail';
+}
+
+.footer_text {
+  position: absolute;
+  bottom: 50px;
+}
+
+.home_footer {
+  position: fixed;
+  bottom: 0;
+  width: 130%;
+  margin-left: -15%;
+  margin-right: -15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  height: 50px;
+  -webkit-transform: skewX(-50deg);
+  transform: skewX(-50deg);
+}
+
+.home_footer .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50%;
+  font-weight: bold;
+  font-size: 13.33px;
+}
+
+.home_footer div:nth-child(1) {
+  z-index: 1;
+  padding-left: 8%;
+  background-color: #FADFCB;
+  color: #EA8C45;
+}
+
+.home_footer div:nth-child(2) {
+  padding-right: 8%;
+  z-index: 1;
+  color: white;
+  background-color: #EA8C45;
+}
+
+.home_footer span {
+  -webkit-transform: skewX(50deg);
+  transform: skewX(50deg);
+}
+
+.quotes_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+@font-face {
+  font-family: 'third_rail';
+  src: url("/themes/Iplay/media/fonts/third_rail-webfont.woff") format("woff");
+}
+
