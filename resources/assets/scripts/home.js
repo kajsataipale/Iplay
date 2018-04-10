@@ -1,1 +1,1 @@
-console.log('hej');
+import './home_functions.js';

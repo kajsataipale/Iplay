@@ -26,7 +26,8 @@
             "public/mu-plugins/{$name}": [
               "type:wordpress-muplugin",
               "wpackagist-plugin/hide-updates",
-              "wpackagist-plugin/advanced-custom-fields"
+              "wpackagist-plugin/advanced-custom-fields",
+              "wordplate/plate"
             ],
             "public/plugins/{$name}": ["type:wordpress-plugin"],
             "public/themes/{$name}": ["type:wordpress-theme"]
