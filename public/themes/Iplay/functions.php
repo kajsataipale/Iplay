@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 require template_path('includes/plugins/plate.php');
 
+require_once template_path('custom_fields/home.php');
+
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
 

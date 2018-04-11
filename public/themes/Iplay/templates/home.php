@@ -25,34 +25,24 @@ $posts = get_posts()
     </div>
   </div>
 
-  <div class="carousel slide" data-ride="carousel">
+  <div class="carousel slide" data-interval="10" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="carousel_content d-block w-1000">
-          <p><?php echo $homeData['quote_1'] ?></p>
-          <p><?php echo $homeData['quote_1_author'] ?></p>
+      <?php
+      if(have_rows('carousel_quotes')):
+        while ( have_rows('carousel_quotes') ) : the_row();
+      ?>
+      <div class="carousel-item <?php echo get_row_index() == 1 ? 'active' :'' ?>">
+        <div class="carousel_content d-block">
+          <?php the_sub_field('quote'); ?>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="carousel_content d-block w-1000">
-          <p><?php echo $homeData['quote_1'] ?></p>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel_content d-block w-1000">
-          <p1>third slide</p>
-        </div>
-      </div>
+
+      <?php
+      endwhile;
+    endif;
+      ?>
     </div>
   </div>
-
-  <!-- <div class="home_middle_content_wrapper">
-  <div class="quotes_container">
-  <p>Detta är världens bästa app blablabla</p>
-  <p>niclas blavla</p>
-</div>
-</div> -->
 
 <div class="home_footer">
   <p class="footer_text">GET THE APP NOW</p>

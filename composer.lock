@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fc62dd9f5b4ef67bdb879e395e53252",
+    "content-hash": "62ab9cc1837e85a68cb677a35fb2838f",
     "packages": [
         {
             "name": "composer/installers",
@@ -1060,6 +1060,67 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "wordplate/acf",
+            "version": "5.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wordplate/acf.git",
+                "reference": "8acf493c002d55301a6c106ffae85fd49fd30ffb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wordplate/acf/zipball/8acf493c002d55301a6c106ffae85fd49fd30ffb",
+                "reference": "8acf493c002d55301a6c106ffae85fd49fd30ffb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "WordPlate\\Acf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@vinkla.com",
+                    "homepage": "https://vinkla.com"
+                },
+                {
+                    "name": "Chris Andersson",
+                    "email": "hello@puredazzle.se",
+                    "homepage": "https://puredazzle.se"
+                }
+            ],
+            "description": "An Advanced Custom Fields helper for WordPlate",
+            "keywords": [
+                "acf",
+                "advanced",
+                "custom",
+                "fields",
+                "wordplate",
+                "wordpress"
+            ],
+            "time": "2018-04-04T12:11:21+00:00"
         },
         {
             "name": "wordplate/framework",
