@@ -18,22 +18,19 @@
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  div:nth-child(2) {
-    border-left: 1px solid #ffc266;
-    border-right: 1px solid #ffc266;
-  }
+
   .home_header_button{
+    border: 0.1px solid #ffc266;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90px;
+    filter: opacity(70%);
     height: 40px;
     color: white;
-    font-weight: bold;
     font-size: 11.1px;
-    font-family: Helvetica;
+    font-family: 'helvetica_n_bold';
     background: #EA8C45;
-    -webkit-transform: skewX(-20deg);
     transform: skewX(-20deg);
     span, img{
       -webkit-transform: skewX(20deg);
@@ -45,6 +42,11 @@
     }
   }
 }
+.home_header_button.home_header_button_active{
+  transform: translateY(-10px) translateX(3px) skewX(-20deg) scaleX(1.1) scaleY(1.1);
+  z-index: 1;
+  filter: none;
+}
 .carousel_content{
   display: flex;
   justify-content: center;
@@ -55,8 +57,10 @@
   padding-left: 10%;
   padding-right: 10%;
   height: 200px;
-  p:nth-child(2){
+  font-family: 'helvetica_n_regular';
+  p:nth-child(2), p:nth-child(3) {
     text-align: right;
+    margin-bottom: 0;
   }
 }
 .home_footer{

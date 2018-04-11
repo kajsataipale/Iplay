@@ -2,8 +2,8 @@
 
 $fieldGroup =[
   acf_group([
-    'name' => 'carousel',
-    'label' => 'Carousel',
+    'name' => 'slide',
+    'label' => 'Slider Quotes',
     'sub_fields' => [
 
       acf_repeater([
@@ -13,13 +13,19 @@ $fieldGroup =[
           acf_textarea([
             'name' => 'quote',
             'label' => 'Quote',
-            'instructions' => 'Idiot',
-            'required' => false,
+            'instructions' => 'Here you fill in text for the quote',
+            'required' => true,
           ]),
           acf_text([
             'name' => 'author',
             'label' => 'Author',
-            'instructions' => 'Idiot',
+            'instructions' => 'Here you fill in the author of the quote',
+            'required' => true,
+          ]),
+          acf_text([
+            'name' => 'institution',
+            'label' => 'Club, Institution or Company',
+            'instructions' => 'Here you can enter the club, institution or company of the author',
             'required' => false,
           ]),
         ]

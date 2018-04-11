@@ -71,24 +71,31 @@
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_js__ = __webpack_require__("./resources/assets/scripts/home.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__home_js__);
 
 
 /***/ }),
 
 /***/ "./resources/assets/scripts/home.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, __webpack_exports__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_functions_js__ = __webpack_require__("./resources/assets/scripts/home_functions.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_functions_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__home_functions_js__);
 
+var buttons = document.querySelectorAll('.home_header_button');
+console.log(buttons);
 
-/***/ }),
+buttons.forEach(function (item) {
+  item.addEventListener('click', function () {
+    removeButtonClass(buttons);
+    item.classList.add('home_header_button_active');
+  });
+});
 
-/***/ "./resources/assets/scripts/home_functions.js":
-/***/ (function(module, exports) {
-
-
+function removeButtonClass(wrapper) {
+  wrapper.forEach(function (item) {
+    item.classList.remove('home_header_button_active');
+  });
+}
 
 /***/ }),
 
