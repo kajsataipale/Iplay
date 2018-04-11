@@ -13,13 +13,13 @@ $posts = get_posts()
   <div class="home_header">
     <h1 class="home_header_text">The only sport app you’ll ever need!</h1>
     <div class="home_header_button_wrap">
-      <div class="home_header_button">
+      <div class="home_header_button first_button">
         <span>TEAM</span>
       </div>
-      <div class="home_header_button home_header_button_active">
+      <div class="home_header_button home_header_button_active second_button">
         <img src="/themes/Iplay/media/images/logo_white_magenta.svg">
       </div>
-      <div class="home_header_button">
+      <div class="home_header_button third_button">
         <span>ABOUT</span>
       </div>
     </div>

@@ -84,17 +84,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var buttons = document.querySelectorAll('.home_header_button');
 console.log(buttons);
 
-buttons.forEach(function (item) {
-  item.addEventListener('click', function () {
+buttons.forEach(function (element) {
+  element.addEventListener('click', function () {
     removeButtonClass(buttons);
-    item.classList.add('home_header_button_active');
+    checkElementClass(element);
+    element.classList.add('home_header_button_active');
   });
 });
 
 function removeButtonClass(wrapper) {
-  wrapper.forEach(function (item) {
-    item.classList.remove('home_header_button_active');
+  wrapper.forEach(function (element) {
+    element.classList.remove('home_header_button_active');
   });
+}
+
+function checkElementClass(element) {
+  if (!element.classList.contains('second_button')) {
+    document.querySelector('.slide').classList.add('notActive');
+  } else {
+    document.querySelector('.slide').classList.remove('notActive');
+  }
 }
 
 /***/ }),

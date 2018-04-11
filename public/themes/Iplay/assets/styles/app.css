@@ -48,6 +48,8 @@
   background: #EA8C45;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .home_header_button_wrap .home_header_button span,
@@ -67,6 +69,12 @@
   z-index: 1;
   -webkit-filter: none;
           filter: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.notActive {
+  display: none;
 }
 
 .carousel_content {

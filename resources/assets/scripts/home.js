@@ -2,15 +2,25 @@
 const buttons = document.querySelectorAll('.home_header_button');
 console.log(buttons);
 
-buttons.forEach((item) => {
-  item.addEventListener('click', () => {
+buttons.forEach((element) => {
+  element.addEventListener('click', () => {
     removeButtonClass(buttons);
-    item.classList.add('home_header_button_active');
+    checkElementClass(element);
+    element.classList.add('home_header_button_active');
   });
 })
 
 function removeButtonClass(wrapper){
-  wrapper.forEach((item)=>{
-    item.classList.remove('home_header_button_active');
+  wrapper.forEach((element)=>{
+    element.classList.remove('home_header_button_active');
   })
+}
+
+function checkElementClass(element){
+  if (!element.classList.contains('second_button')) {
+    document.querySelector('.slide').classList.add('notActive');
+  }
+  else {
+    document.querySelector('.slide').classList.remove('notActive');
+  }
 }

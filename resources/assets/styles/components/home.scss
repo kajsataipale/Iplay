@@ -32,6 +32,7 @@
     font-family: 'helvetica_n_bold';
     background: #EA8C45;
     transform: skewX(-20deg);
+    transition: .2s;
     span, img{
       -webkit-transform: skewX(20deg);
       transform: skewX(20deg);
@@ -46,6 +47,10 @@
   transform: translateY(-10px) translateX(3px) skewX(-20deg) scaleX(1.1) scaleY(1.1);
   z-index: 1;
   filter: none;
+  transition: .2s;
+}
+.notActive{
+  display: none;
 }
 .carousel_content{
   display: flex;
