@@ -303,7 +303,7 @@ ul {
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
   height: 90vh;
-  background-color: #ffe2d0;
+  background-color: #f0f0f0;
   background-image: url("/themes/Iplay/media/images/background_mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
