@@ -165,19 +165,21 @@
 
 .home_footer {
   z-index: 1;
+  height: 10vh;
+  position: fixed;
 }
 
 .footer_text {
   background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
-  bottom: 40px;
+  bottom: 10vh;
   color: #f81b84;
   font-size: 13px;
   text-align: center;
   font-family: 'third_rail';
   width: 100%;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 
