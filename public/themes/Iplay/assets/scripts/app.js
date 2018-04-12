@@ -72,6 +72,9 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_js__ = __webpack_require__("./resources/assets/scripts/home.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__home_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_js__ = __webpack_require__("./resources/assets/scripts/navigation.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__navigation_js__);
+
 
 
 /***/ }),
@@ -109,6 +112,13 @@ function checkElementClass(element) {
     document.querySelector('.about_wrapper').classList.remove('notActive');
   }
 }
+
+/***/ }),
+
+/***/ "./resources/assets/scripts/navigation.js":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
