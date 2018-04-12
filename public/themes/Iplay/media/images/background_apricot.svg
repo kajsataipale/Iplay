@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="568px" viewBox="0 0 320 568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>atoms/flyout/background_stripes/apricot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="atoms/flyout/background_stripes/apricot" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="atoms/flyout/background_down/Apricot" transform="translate(0.000000, -1.000000)">
+            <g id="Group" stroke-width="1" fill="#FFE2D0">
+                <rect id="Rectangle" x="0" y="0" width="321" height="520.952381"></rect>
+            </g>
+            <g id="atoms/arrow/orange_fill" transform="translate(160.000000, 515.000000) rotate(180.000000) translate(-160.000000, -515.000000) translate(148.000000, 509.000000)" fill="#F7882F">
+                <polygon id="Path-2" transform="translate(12.000000, 6.000000) rotate(-90.000000) translate(-12.000000, -6.000000) " points="18 18 18 -6 6 6"></polygon>
+            </g>
+        </g>
+        <polygon id="Rectangle-2" fill-opacity="0.15" fill="#F7882F" transform="translate(112.000000, 113.500000) scale(-1, 1) rotate(45.000000) translate(-112.000000, -113.500000) " points="-3.08888862 67 229.597216 73.9263507 316 160 -92 155.572422"></polygon>
+        <polygon id="Rectangle-2-Copy" fill-opacity="0.1" fill="#F7882F" transform="translate(160.000000, 237.500000) scale(-1, 1) rotate(45.000000) translate(-160.000000, -237.500000) " points="-111 193 343.287183 194.25405 431 282 -22.1134785 281.920098"></polygon>
+        <polygon id="Rectangle-2-Copy-2" fill-opacity="0.05" fill="#F7882F" transform="translate(187.500000, 379.500000) scale(-1, 1) rotate(45.000000) translate(-187.500000, -379.500000) " points="-44 336 409.107258 336.547698 419 346.477644 350.457427 415.277988 42.6740413 423"></polygon>
+    </g>
+</svg>
