@@ -29,7 +29,7 @@ ul {
   width: 36px;
 }
 .mobileMenu.active{
-
+  transition: transform .3s ease;
   height: 92vh;
   background-color: rgba(255,226,208,1);
   background-image: url('/themes/Iplay/media/images/background_apricot.svg');

@@ -277,6 +277,10 @@ ul {
 }
 
 .mobileMenu.active {
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
   height: 92vh;
   background-color: #ffe2d0;
   background-image: url("/themes/Iplay/media/images/background_apricot.svg");
