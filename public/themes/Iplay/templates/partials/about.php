@@ -5,11 +5,14 @@
     while ( have_rows('aboutFields_field') ) : the_row();
     ?>
     <div class="about_element_wrapper">
-      <img src="/themes/Iplay/media/images/red_heart.svg">
-      <p><?php the_sub_field('content'); ?></p>
+      <img src="<?php echo get_sub_field('icon')['url'] ?>">
+      <div class="about_element_text_wrapper">
+        <h2> <?php the_sub_field('title') ?></h2>
+        <p><?php the_sub_field('content'); ?></p>
+      </div>
     </div>
     <?php
-    endwhile;
-  endif;
+  endwhile;
+endif;
 ?>
 </div>
