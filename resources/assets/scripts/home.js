@@ -23,4 +23,10 @@ function checkElementClass(element){
   else {
     document.querySelector('.slide').classList.remove('notActive');
   }
+  if (!element.classList.contains('third_button')) {
+    document.querySelector('.about_wrapper').classList.add('notActive');
+  }
+  else {
+    document.querySelector('.about_wrapper').classList.remove('notActive');
+  }
 }

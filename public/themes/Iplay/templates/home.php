@@ -5,8 +5,6 @@ Template Name: Home
 
 get_header();
 
-$homeData = get_fields();
-$posts = get_posts()
 ?>
 
 <div class="home_wrapper">
@@ -25,25 +23,9 @@ $posts = get_posts()
     </div>
   </div>
 
-  <div class="carousel slide" data-interval="10000" data-ride="carousel">
-    <div class="carousel-inner">
-      <?php
-      if(have_rows('slide_quotes')):
-        while ( have_rows('slide_quotes') ) : the_row();
-      ?>
-      <div class="carousel-item <?php echo get_row_index() == 1 ? 'active' :'' ?>">
-        <div class="carousel_content d-block">
-          <p>”<?php the_sub_field('quote'); ?>”</p>
-          <p>— <?php the_sub_field('author'); ?></p>
-          <p><?php the_sub_field('institution'); ?></p>
-        </div>
-      </div>
-      <?php
-      endwhile;
-    endif;
-      ?>
-    </div>
-  </div>
+  <?php require('partials/carousel.php'); ?>
+  <?php require('partials/about.php'); ?>
+
 
 <div class="home_footer">
   <p class="footer_text">GET THE APP NOW</p>

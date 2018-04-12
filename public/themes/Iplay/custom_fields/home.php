@@ -31,21 +31,33 @@ $fieldGroup =[
         ]
       ]),
     ],
+  ]),
+  acf_group([
+    'name' => 'aboutFields',
+    'label' => 'About Fields',
+    'sub_fields' => [
+      acf_repeater([
+        'name' => 'field',
+        'label' => 'Field',
+        'sub_fields' => [
+          acf_textarea([
+            'name' => 'content',
+            'label' => 'Content',
+            'instructions' => 'Here you fill in the content for your about field',
+            'required' => true,
+          ]),
+        ]
+      ]),
+    ],
   ])
 ];
 
-$location = [
-  [
-    acf_location('page_template', 'templates/home.php')
-  ]
-];
+$location = [[acf_location('page_template', 'templates/home.php')]];
 
 acf_field_group([
   'title' => 'home',
   'fields' => $fieldGroup,
   'style' => 'seamless',
   'location' => $location,
-  'hide_on_screen' => [
-    0 => 'the_content'
-  ]
+  'hide_on_screen' => [0 => 'the_content']
 ]);
