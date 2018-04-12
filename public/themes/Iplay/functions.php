@@ -3,8 +3,18 @@
 declare(strict_types=1);
 
 require template_path('includes/plugins/plate.php');
-
 require_once template_path('custom_fields/home.php');
+
+// Adding edit meny option
+// add_action('after_setup_theme', function () {
+//     add_theme_support('title-tag');
+//
+//     show_admin_bar(false);
+//
+//     register_nav_menu('primary-menu', __('Primary Menu', 'iplay'));
+//
+// });
+
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');
