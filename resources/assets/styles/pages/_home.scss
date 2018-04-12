@@ -1,14 +1,18 @@
 .home_wrapper{
-  background-color: black;
+  background-color: white;
   min-height: 100vh;
   width: 100vw;
   margin: 0;
+  background-image: url('/themes/Iplay/media/images/Fotboll_Magenta.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
 }
 .home_header{
   padding-top: 30px;
 }
 .home_header_text{
-  color: white;
+  color: rgba(248,27,132,1);
   font-size: 18.5px;
   text-align: center;
   font-family: 'third_rail';
@@ -56,16 +60,17 @@
   z-index: 1;
 }
 .footer_text{
-  background-color: black;
+  background-color: rgba(255,255,255, 0.7);
   position: fixed;
   bottom: 40px;
-  color: white;
+  color: rgba(248,27,132,1);
   font-size: 13px;
   text-align: center;
   font-family: 'third_rail';
   width: 100%;
   margin: 0;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 .home_footer_button_wrap{
   position: fixed;
@@ -75,7 +80,7 @@
   margin-right: -15%;
   display: flex;
   flex-flow: nowrap;
-  height: 50px;
+  height: 10vh;
   -webkit-transform: skewX(-50deg);
   transform: skewX(-50deg);
 
@@ -83,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 10vh;
     width: 50%;
     font-weight: bold;
     font-size: 13.33px;

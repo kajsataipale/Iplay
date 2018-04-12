@@ -21,7 +21,7 @@ ul {
   display: none;
 }
 .rectangle{
-  position: absolute;
+  position: fixed;
   background-color: rgba(247,136,47,1);
   padding: 0;
   top: 1.8vh;
@@ -31,14 +31,14 @@ ul {
 }
 .mobileMenu.active{
   transition: transform .3s ease;
-  height: 92vh;
+  height: 90vh;
   background-color: rgba(255,226,208,1);
   background-image: url('/themes/Iplay/media/images/background_apricot.svg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   z-index: 100;
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   flex-direction: column;
