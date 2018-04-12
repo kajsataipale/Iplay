@@ -4,10 +4,11 @@ body {
   padding: 0;
   margin:0;
 }
+
 .mobileMenu{
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 2vh;
   background-color: rgba(247,136,47,1);
@@ -28,6 +29,7 @@ ul {
   width: 36px;
 }
 .mobileMenu.active{
+
   height: 92vh;
   background-color: rgba(255,226,208,1);
   background-image: url('/themes/Iplay/media/images/background_apricot.svg');
