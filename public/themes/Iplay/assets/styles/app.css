@@ -333,6 +333,10 @@ body {
   height: 2vh;
   background-color: #f81b84;
   z-index: 2;
+  -webkit-transition: height 1s, background-color 4s, -webkit-transform 3s;
+  transition: height 1s, background-color 4s, -webkit-transform 3s;
+  transition: height 1s, background-color 4s, transform 3s;
+  transition: height 1s, background-color 4s, transform 3s, -webkit-transform 3s;
 }
 
 ul {
@@ -355,11 +359,11 @@ ul {
 }
 
 .mobileMenu.active {
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
   height: 90vh;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+  -webkit-transition: height 1s;
+  transition: height 1s;
   background-color: #f0f0f0;
   background-image: url("/themes/Iplay/media/images/background_mobile.svg");
   background-repeat: no-repeat;
