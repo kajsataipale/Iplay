@@ -25,6 +25,7 @@ get_header();
 
   <?php require('partials/carousel.php'); ?>
   <?php require('partials/about.php'); ?>
+  <?php require('partials/team.php'); ?>
 
 
 <div class="home_footer">

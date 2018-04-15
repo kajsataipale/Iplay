@@ -101,6 +101,11 @@ function removeButtonClass(wrapper) {
 }
 
 function checkElementClass(element) {
+  if (!element.classList.contains('first_button')) {
+    document.querySelector('.team_wrapper').classList.add('notActive');
+  } else {
+    document.querySelector('.team_wrapper').classList.remove('notActive');
+  }
   if (!element.classList.contains('second_button')) {
     document.querySelector('.slide').classList.add('notActive');
   } else {
