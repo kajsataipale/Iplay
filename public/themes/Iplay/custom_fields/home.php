@@ -3,12 +3,13 @@
 $fieldGroup =[
   acf_group([
     'name' => 'slide',
-    'label' => 'Slider Quotes',
+    'label' => 'Slider',
     'sub_fields' => [
 
       acf_repeater([
         'name' => 'quotes',
         'label' => 'Quotes',
+        'layout' => 'block',
         'sub_fields' => [
           acf_textarea([
             'name' => 'quote',
@@ -34,11 +35,12 @@ $fieldGroup =[
   ]),
   acf_group([
     'name' => 'aboutFields',
-    'label' => 'About Fields',
+    'label' => 'About',
     'sub_fields' => [
       acf_repeater([
         'name' => 'field',
-        'label' => 'Field',
+        'label' => 'Sections',
+        // 'layout' => 'row',
         'sub_fields' => [
           acf_text([
             'name' => 'title',
@@ -62,7 +64,53 @@ $fieldGroup =[
         ]
       ]),
     ],
+  ]),
+
+  acf_group([
+    'name' => 'teamFields',
+    'label' => 'Team',
+    'sub_fields' => [
+      acf_repeater([
+        'name' => 'field',
+        'label' => 'Members',
+        // 'layout' => 'row',
+        'sub_fields' => [
+          acf_text([
+            'name' => 'role',
+            'label' => 'Role',
+            'instructions' => 'Here you fill in the title for your about field',
+            'required' => true,
+          ]),
+          acf_text([
+            'name' => 'name',
+            'label' => 'Name',
+            'instructions' => 'Here you fill in the content for your about field',
+            'required' => true,
+          ]),
+          acf_text([
+            'name' => 'phone',
+            'label' => 'Phone',
+            'instructions' => 'Here you fill in the content for your about field',
+            'required' => true,
+          ]),
+          acf_text([
+            'name' => 'mail',
+            'label' => 'Mail',
+            'instructions' => 'Here you fill in the content for your about field',
+            'required' => true,
+          ]),
+          acf_image([
+            'name' => 'image',
+            'label' => 'Image',
+            'instructions' => 'Here you choose the icon for the about field',
+            'required' => true,
+            'return_format' => 'array',
+          ])
+        ]
+      ]),
+    ],
   ])
+
 ];
 
 $location = [[acf_location('page_template', 'templates/home.php')]];
