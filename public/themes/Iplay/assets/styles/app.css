@@ -262,10 +262,24 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.mobileMenu {
+.desktopBox {
   position: fixed;
+  bottom: 7.41%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,13 +287,19 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 2vh;
+  height: 4vh;
   background-color: #f81b84;
   z-index: 2;
-  -webkit-transition: height 1s, background-color 4s, -webkit-transform 3s;
-  transition: height 1s, background-color 4s, -webkit-transform 3s;
-  transition: height 1s, background-color 4s, transform 3s;
-  transition: height 1s, background-color 4s, transform 3s, -webkit-transform 3s;
+}
+
+.slogan,
+.slogan2 {
+  display: none;
+  opacity: 0;
+}
+
+.athletesDescription {
+  display: none;
 }
 
 ul {
@@ -290,147 +310,224 @@ ul {
   display: none;
 }
 
+.mobileMenu {
+  position: fixed;
+  bottom: 7.41%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 4vh;
+  background-color: #f81b84;
+  z-index: 2;
+  -webkit-transition: height 1s, background-color 3s, -webkit-transform 2s;
+  transition: height 1s, background-color 3s, -webkit-transform 2s;
+  transition: height 1s, background-color 3s, transform 2s;
+  transition: height 1s, background-color 3s, transform 2s, -webkit-transform 2s;
+}
+
 .rectangle {
   position: fixed;
   background-color: #f81b84;
   padding: 0;
-  top: 1.8vh;
-  -webkit-clip-path: polygon(46% 100%, 0 0, 100% 0);
-          clip-path: polygon(46% 100%, 0 0, 100% 0);
-  height: 19px;
-  width: 36px;
+  bottom: 9.63%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  height: 40px;
+  width: 90px;
 }
 
 .mobileMenu.active {
-  height: 90vh;
+  height: 70vh;
   -webkit-transition: background-color .1s;
   transition: background-color .1s;
   -webkit-transition: height 1s;
   transition: height 1s;
-  background-color: #f0f0f0;
-  background-image: url("/themes/Iplay/media/images/background_mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  background-color: #F6F6F6;
+  width: 79.17%;
+  height: 80%;
   z-index: 100;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  bottom: 11.5%;
 }
 
-.mobileMenu.active ul li a {
-  color: black;
-  text-decoration: none;
-  margin-left: 94px;
+.mobileMenu.active .rectangle {
+  position: absolute;
+  background-color: #f81b84;
+  padding: 0;
+  top: 0;
+  -webkit-clip-path: polygon(46% 100%, 0 0, 100% 0);
+          clip-path: polygon(46% 100%, 0 0, 100% 0);
+  height: 23px;
+  width: 50px;
 }
 
-.mobileMenu.active ul li a:hover {
-  text-decoration: none;
-  color: black;
+.mobileMenu.active .slogan {
+  position: absolute;
+  display: block;
+  margin-top: 2.51%;
+  height: 48px;
+  width: 100%;
+  color: #F81B84;
+  font-family: 'third_rail';
+  text-align: center;
+  opacity: 1;
+}
+
+.mobileMenu.active .slogan h1 {
+  font-size: 30px;
+  letter-spacing: 2.77px;
+  line-height: 58px;
+}
+
+.mobileMenu.active .slogan2 {
+  position: absolute;
+  bottom: -6px;
+  display: block;
+  margin-bottom: 1.51%;
+  height: 48px;
+  width: 100%;
+  color: #F81B84;
+  font-family: 'third_rail';
+  text-align: center;
+  -webkit-transition: 3s;
+  transition: 3s;
+  opacity: 1;
+}
+
+.mobileMenu.active .slogan2 h1 {
+  font-size: 30px;
+  letter-spacing: 2.77px;
+  line-height: 58px;
+}
+
+.mobileMenu.active .athletesDescription {
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 100%;
+  color: #000;
+  font-family: 'Helvetica Neue';
+  text-align: left;
+  -webkit-transition: 3s;
+  transition: 3s;
+  opacity: 1;
+  z-index: 2;
+}
+
+.mobileMenu.active .athletesDescription h2 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 22px;
 }
 
 .mobileMenu.active ul {
   list-style: none;
   padding: 0;
-  width: 100%;
   margin: 0;
+  width: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
 }
 
-.mobileMenu.active ul li {
+.mobileMenu.active li {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Helvetica Neue";
-  height: 64px;
-  width: 288px;
-  font-size: 190%;
-  font-weight: bold;
-  line-height: 34px;
-  background-color: rgba(255, 254, 252, 0.7);
-  text-decoration: none;
-  color: black;
-  margin-bottom: 4.41%;
-  z-index: 100;
-}
-
-.mobileMenu.active .GetApp {
-  position: relative;
-  display: block;
-  color: white;
-  z-index: 100;
-  top: 52px;
-  width: 35.95px;
-  height: 56px;
-  height: 5.63%;
-  width: 65%;
-  color: #f81b84;
-  font-family: "third_rail";
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.mobileMenu.active .GetApp h2 {
-  font-size: 23.04px;
-  line-height: 28px;
-}
-
-.mobileMenu.active .rectangle {
-  display: none;
-}
-
-.mobileMenu.active .rectangle2 {
-  position: absolute;
-  background-color: #f81b84;
+  margin-top: 15px;
   padding: 0;
-  bottom: 0;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  height: 12px;
-  width: 24px;
+  height: 27vh;
+  width: 45vh;
+  font-size: 23.04px;
+  background-color: #FFFEFC;
+  text-decoration: none;
 }
 
-.mobileMenu.active li .home-menu-item {
-  margin-top: 72px;
-}
-
-.mobileMenu.active .home-menu-item:before,
-.mobileMenu.active .athlete-menu-item:before,
-.mobileMenu.active .fans-menu-item:before,
-.mobileMenu.active .business-menu-item:before,
-.mobileMenu.active .institutions-menu-item:before {
-  height: 3rem;
+.mobileMenu.active .description-Athletes,
+.mobileMenu.active .description-Fans,
+.mobileMenu.active .description-Business,
+.mobileMenu.active .description-Institutions {
+  height: 6vh;
+  width: 22vh;
   position: absolute;
-  left: 1.5rem;
-  width: 3rem;
+  left: 150px;
+  bottom: 48px;
+  top: 70px;
+  font-size: small;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.mobileMenu.active .goto-Athletes,
+.mobileMenu.active .goto-Fans,
+.mobileMenu.active .goto-Business,
+.mobileMenu.active .goto-Institutions {
+  height: 6vh;
+  width: 22vh;
+  position: absolute;
+  left: 208px;
+  bottom: 16px;
+  top: 190px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: small;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .mobileMenu.active ul li a {
+    color: black;
+    text-decoration: none;
+    margin-top: 24px;
+    margin-left: 150px;
+  }
+
+  .mobileMenu.active ul li a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobileMenu.active .athlete-menu-item,
+  .mobileMenu.active .fans-menu-item {
+    margin-bottom: 48px;
+  }
+
+  .mobileMenu.active .athlete-menu-item,
+  .mobileMenu.active .business-menu-item {
+    margin-right: 48px;
+  }
+
+  .mobileMenu.active .athlete-menu-item:before,
+  .mobileMenu.active .fans-menu-item:before,
+  .mobileMenu.active .business-menu-item:before,
+  .mobileMenu.active .institutions-menu-item:before {
+    height: 6rem;
+    top: 25px;
+    position: absolute;
+    left: 24px;
+    right: 40px;
+    width: 6rem;
+  }
 }
 
 .mobileMenu.active .athlete-menu-item:before {
@@ -447,5 +544,180 @@ ul {
 
 .mobileMenu.active .institutions-menu-item:before {
   content: url("/themes/Iplay/media/images/institutionsicon.svg");
+}
+
+@media screen and (max-width: 900px) {
+  .desktopBox {
+    display: none;
+  }
+
+  .rectangle {
+    position: fixed;
+    padding: 0;
+    top: 1.8vh;
+    -webkit-clip-path: polygon(46% 100%, 0 0, 100% 0);
+            clip-path: polygon(46% 100%, 0 0, 100% 0);
+    height: 19px;
+    width: 36px;
+  }
+
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    height: 2vh;
+    background-color: #f81b84;
+    z-index: 2;
+    -webkit-transition: height 1s, background-color 4s, -webkit-transform 3s;
+    transition: height 1s, background-color 4s, -webkit-transform 3s;
+    transition: height 1s, background-color 4s, transform 3s;
+    transition: height 1s, background-color 4s, transform 3s, -webkit-transform 3s;
+  }
+
+  .mobileMenu.active {
+    height: 90vh;
+    -webkit-transition: background-color .1s;
+    transition: background-color .1s;
+    -webkit-transition: height 1s;
+    transition: height 1s;
+    background-color: #f0f0f0;
+    background-image: url("/themes/Iplay/media/images/background_mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .mobileMenu.active ul li a {
+    color: black;
+    text-decoration: none;
+    margin-left: 94px;
+  }
+
+  .mobileMenu.active ul li a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobileMenu.active ul {
+    list-style: none;
+    padding: 0;
+    width: 100vh;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .mobileMenu.active ul li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Helvetica Neue";
+    height: 64px;
+    width: 288px;
+    font-size: 190%;
+    font-weight: bold;
+    line-height: 34px;
+    background-color: rgba(255, 254, 252, 0.7);
+    text-decoration: none;
+    color: black;
+    margin-bottom: 4.41%;
+    z-index: 100;
+  }
+
+  .mobileMenu.active .GetApp {
+    position: relative;
+    display: block;
+    color: white;
+    z-index: 100;
+    top: 52px;
+    margin-bottom: 50px;
+    height: 56px;
+    width: 65%;
+    color: #f81b84;
+    font-family: "third_rail";
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .mobileMenu.active .GetApp h2 {
+    font-size: 23.04px;
+    line-height: 28px;
+  }
+
+  .mobileMenu.active .slogan,
+  .mobileMenu.active .slogan2 {
+    display: none;
+    opacity: 0;
+  }
+
+  .mobileMenu.active .athletesDescription {
+    display: none;
+  }
+
+  .mobileMenu.active .description-Athletes,
+  .mobileMenu.active .description-Fans,
+  .mobileMenu.active .description-Business,
+  .mobileMenu.active .description-Institutions {
+    display: none;
+  }
+
+  .mobileMenu.active .rectangle {
+    display: none;
+  }
+
+  .mobileMenu.active .rectangle2 {
+    position: absolute;
+    background-color: #f81b84;
+    padding: 0;
+    bottom: 0;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 12px;
+    width: 24px;
+  }
+
+  .mobileMenu.active li .athlete-menu-item {
+    margin-top: 72px;
+  }
+
+  .mobileMenu.active .athlete-menu-item:before,
+  .mobileMenu.active .fans-menu-item:before,
+  .mobileMenu.active .business-menu-item:before,
+  .mobileMenu.active .institutions-menu-item:before {
+    height: 3rem;
+    position: absolute;
+    left: 1.5rem;
+    width: 3rem;
+  }
 }
 

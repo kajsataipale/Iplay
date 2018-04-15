@@ -53,3 +53,16 @@ array(
   'update_plugin' => false, // User can’t update any plugins
   'update_core' => false // user cant perform core updates
 ));
+function add_description_to_menu($item_output, $item, $depth, $args) {
+    if (strlen($item->description) > 0 ) {
+        // append description after link
+
+        $item_output .= sprintf("<span class=description-$item->title>%s</span><span class=goto-$item->title>Go to $item->title ></span>", esc_html($item->description));
+
+        // insert description as last item *in* link ($input_output ends with "</a>{$args->after}")
+        //$item_output = substr($item_output, 0, -strlen("</a>{$args->after}")) . sprintf('<span class="description">%s</span >', esc_html($item->description)) . "</a>{$args->after}";
+    }
+    return $item_output;
+}
+
+add_filter('walker_nav_menu_start_el', 'add_description_to_menu', 10, 4);
