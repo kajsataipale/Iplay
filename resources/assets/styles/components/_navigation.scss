@@ -19,7 +19,7 @@ body {
   z-index: 2;
 }
 .slogan, .slogan2{
-  display: none;
+  color: #F6F6F6;
   opacity: 0;
 }
 .athletesDescription{
@@ -82,6 +82,7 @@ ul {
     font-family: 'third_rail';
     text-align: center;
     opacity: 1;
+    transition: 1s ease-in;
   }
   .slogan h1 {
     font-size: 30px;
@@ -98,7 +99,7 @@ ul {
     color: #F81B84;
     font-family: 'third_rail';
     text-align: center;
-    transition: 3s;
+    transition: 1s ease-in;
     opacity: 1;
   }
   .slogan2 h1 {

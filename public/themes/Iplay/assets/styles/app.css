@@ -351,7 +351,7 @@ body {
 
 .slogan,
 .slogan2 {
-  display: none;
+  color: #F6F6F6;
   opacity: 0;
 }
 
@@ -432,6 +432,8 @@ ul {
   font-family: 'third_rail';
   text-align: center;
   opacity: 1;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
 }
 
 .mobileMenu.active .slogan h1 {
@@ -450,8 +452,8 @@ ul {
   color: #F81B84;
   font-family: 'third_rail';
   text-align: center;
-  -webkit-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
   opacity: 1;
 }
 
