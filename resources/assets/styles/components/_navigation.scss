@@ -259,6 +259,9 @@ ul {
     z-index: 2;
     transition: height 1s, background-color 4s, transform 3s;
   }
+  .slogan, .slogan2{
+    display: none;
+  }
   .mobileMenu.active{
     height: 90vh;
     transition: background-color .1s;
@@ -330,7 +333,6 @@ ul {
     }
     .slogan, .slogan2{
       display: none;
-      opacity: 0;
     }
     .athletesDescription{
       display: none;
@@ -341,6 +343,7 @@ ul {
       .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
         display: none;
       }
+
     .rectangle{
       display: none;
     }
