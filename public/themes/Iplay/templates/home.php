@@ -9,15 +9,20 @@ get_header();
 
 <div class="home_wrapper">
   <div class="home_header">
+    <div class="header_desktop_logo">
+      <img src="/themes/Iplay/media/images/logo_white_magenta.svg">
+    </div>
     <h1 class="home_header_text">The only sport app you’ll ever need!</h1>
     <div class="home_header_button_wrap">
       <div class="home_header_button first_button">
+        <div class="button_desktop"></div>
         <span>TEAM</span>
       </div>
       <div class="home_header_button home_header_button_active second_button">
         <img src="/themes/Iplay/media/images/logo_white_magenta.svg">
       </div>
       <div class="home_header_button third_button">
+        <div class="button_desktop"></div>
         <span>ABOUT</span>
       </div>
     </div>
