@@ -422,11 +422,11 @@
   }
 
   .desktop_footer_text {
-    height: 56px;
+    height: auto;
     position: relative;
     margin-right: 4%;
     margin-left: 8%;
-    padding: 0;
+    padding-top: 4%;
     text-align: center;
     color: #FFFEFC;
     font-size: 30px;
@@ -438,7 +438,7 @@
   .small_footer_text {
     font-size: 10px;
     position: relative;
-    top: -25px;
+    top: -30px;
     font-family: 'helvetica_n_regular';
   }
 
@@ -451,8 +451,8 @@
   .home_footer_button_wrap {
     position: fixed;
     bottom: 15px;
-    height: 50px;
-    margin-left: 30%;
+    height: auto;
+    margin-left: 34%;
     width: 44%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -469,15 +469,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     height: 50px;
-    width: 200px;
-    font-size: 13.33px;
+    width: 180px;
+    padding: 3%;
+    font-size: 70%;
     text-decoration: none;
   }
 
@@ -485,23 +486,41 @@
     background-color: #FF88C7;
     z-index: 1;
     color: white;
-    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
     margin-right: -50px;
   }
 
   .home_footer_button_wrap a:nth-child(2) {
     background-color: #F81B84;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     z-index: 1;
     color: white;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+    -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
   }
 
   .home_footer_button_wrap img {
     width: 21px;
     height: 23px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-width: 900px) and (max-width: 1130px) {
+  .home_footer_button_wrap .home_footer_button {
+    width: 34%;
+    font-size: 55%;
+  }
+
+  .home_footer_button_wrap img {
+    width: 15%;
+    height: auto;
   }
 }
 
@@ -728,7 +747,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 3vh;
+  height: 24px;
   background-color: #f81b84;
   z-index: 2;
 }
@@ -737,6 +756,8 @@ body {
 .slogan2 {
   color: #F6F6F6;
   opacity: 0;
+  height: 0px;
+  width: 0px;
 }
 
 .athletesDescription {
@@ -783,7 +804,7 @@ ul {
 }
 
 .mobileMenu.active {
-  height: 70vh;
+  height: 70.5vh;
   -webkit-transition: background-color .1s;
   transition: background-color .1s;
   -webkit-transition: height 1s;
@@ -1033,6 +1054,8 @@ ul {
   .slogan,
   .slogan2 {
     display: none;
+    height: 0px;
+    width: 0px;
   }
 
   .mobileMenu.active {
