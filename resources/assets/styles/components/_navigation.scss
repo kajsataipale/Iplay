@@ -10,11 +10,11 @@ body {
 }
 .desktopBox{
   position: fixed;
-  bottom: 7.41%;
+  bottom: 80px;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 4vh;
+  height: 3vh;
   background-color: rgba(248,27,132,1);
   z-index: 2;
 }
@@ -34,11 +34,11 @@ ul {
 }
 .mobileMenu{
   position: fixed;
-  bottom: 7.41%;
+  bottom: 80px;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 4vh;
+  height: 24px;
   background-color: rgba(248,27,132,1);
   z-index: 2;
   transition: height 1s, background-color 3s, transform 2s;
@@ -47,7 +47,7 @@ ul {
   position: fixed;
   background-color: rgba(248,27,132,1);
   padding: 0;
-  bottom: 9.63%;
+  bottom: 104px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	height: 40px;
   width: 90px;
@@ -62,7 +62,7 @@ ul {
   height: 80%;
   z-index: 100;
   position: fixed;
-  bottom:11.5%;
+  bottom:105px;
 
   .rectangle{
     position: absolute;
@@ -131,7 +131,7 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -143,9 +143,10 @@ ul {
     position: relative;
     display: flex;
     margin-top: 15px;
+    left: 65px;
     padding: 0;
 		height: 27vh;
-    width: 45vh;
+    width: 37%;
     font-size: 23.04px;
     background-color: #FFFEFC;
     text-decoration: none;
@@ -159,20 +160,31 @@ ul {
     top: 70px;
     font-size:small;
     align-self: flex-start;
+    font-family: 'helvetica_n_regular';
   }
   .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
     height: 6vh;
     width: 22vh;
     position: absolute;
-    left: 208px;
-    bottom: 16px;
-    top: 190px;
+    right: -40px;
+    bottom: -20px;
+    font-family: 'helvetica_n_regular';
+    // top: 190px;
     text-decoration: underline;
     font-weight: bold;
     font-size:small;
     align-self: flex-start;
     cursor: pointer;
   }
+  @media screen and (min-width: 900px) and (max-width: 1130px){
+    .description-Athletes, .description-Fans, .description-Business, .description-Institutions{
+        display: none;
+      }
+    // .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
+    //   bottom: 4vh;
+    //   left: 15vw;
+    // }
+    }
   @media screen and (min-width: 900px){
     ul li a {
       color:rgba(0,0,0,1);
@@ -185,7 +197,7 @@ ul {
       }
     }
   .athlete-menu-item, .fans-menu-item{
-      margin-bottom: 48px;
+      margin-bottom: 28px;
   }
 
   .athlete-menu-item,.business-menu-item{
@@ -228,6 +240,8 @@ ul {
 @media screen and (max-width: 900px){
   .desktopBox{
     display: none;
+    width: 0px;
+    height: 0px;
   }
   .rectangle{
     position: fixed;
@@ -252,11 +266,6 @@ ul {
   .slogan, .slogan2{
     display: none;
   }
-  ul{
-    opacity: 0;
-    background-color: rgba(240,240,240,1);
-  }
-
   .mobileMenu.active{
     height: 90vh;
     transition: background-color .1s;
@@ -285,6 +294,7 @@ ul {
       padding: 0;
       width: 100vh;
       margin: 0;
+      // margin-right: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -301,16 +311,15 @@ ul {
       font-size: 190%;
       font-weight: bold;
       line-height: 34px;
-      background-color: rgba(255,254,252,0.7);
+      // background-color: rgba(255,254,252,0.7);
       text-decoration: none;
       color: rgba(0,0,0,1);
       margin-bottom: 4.41%;
       z-index: 100;
       transition: height 1s, background-color 4s, transform 3s;
     }
-  ul {
-    opacity: 1;
-    transition: 2s ease-in;
+    li{
+      left:0;
     }
     .GetApp{
       opacity: 1;
