@@ -58,7 +58,108 @@
   height: 0px;
   width: 0px;
 }
-//desktop
+.header_desktop_logo{
+  display: none;
+  height: 0px;
+  width: 0px;
+}
+//desktop header
+@media screen and (min-width: 900px){
+  div.home_header_button.home_button_active.second_button{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  div.home_header_button.second_button{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  .home_header{
+    position: relative;
+    height: 8vh;
+    width: 100%;
+    background-color: #F7882F;
+  }
+  .home_header_text{
+    color: #F81B84;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'helvetica_n_regular';
+  }
+  .header_desktop_logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 11.24vh;
+    height: 8vh;
+    width: 9vw;
+    img{
+      height: 100%;
+      width: 100%;
+      background-color: #F7882F;
+    }
+  }
+  .home_header_button_wrap{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    // padding-top: 20px;
+
+
+
+    .home_header_button{
+      // border: 0.1px solid #ffc266;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      // filter: opacity(70%);
+      // width: 90px;
+      // height: 40px;
+      height: 32px;
+      width: 193px;
+      color: #F81B84;
+      font-size: 11.1px;
+      font-family: 'helvetica_n_bold';
+      background-color: #FFFEFC;
+      transform: skewX(-20deg);
+      transition: .2s;
+      cursor: pointer;
+      span, img{
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg);
+      }
+      img{
+        height: 0px;
+        width: 0px;
+        display: none;
+      }
+      .button_desktop{
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 32px;
+        background-color: #F81B84;
+      }
+
+    }
+  }
+  .home_header_button.home_header_button_active{
+    transform: translateY(-10px) translateX(3px) skewX(-20deg) scaleX(1.1) scaleY(1.1);
+    z-index: 1;
+    filter: none;
+    transition: .2s;
+  }
+  .notActive{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+}
+
+//desktop footer
   @media screen and (min-width: 900px){
     .mobile_androidicon{
       display: none;
@@ -67,7 +168,7 @@
     }
     .home_footer{
         z-index: 1;
-        height: 80px;
+        height: 9.5vh;
         background-color: #F7882F;
         position: fixed;
         bottom: 0;
@@ -151,7 +252,7 @@
           }
     }
 }
-  //mobile
+  //mobile footer
   @media screen and (max-width: 900px){
     .desktop_androidicon{
       display: none;
