@@ -85,7 +85,7 @@ ul {
     transition: 1s ease-in;
   }
   .slogan h1 {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2.77px;
     line-height: 58px;
   }
@@ -103,7 +103,7 @@ ul {
     opacity: 1;
   }
   .slogan2 h1 {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2.77px;
     line-height: 58px;
   }
@@ -152,7 +152,7 @@ ul {
   	height: auto;
     width: 14vh;
     position: absolute;
-    left: 150px;
+    left: 42%;
     bottom: 48px;
     top: 70px;
     font-size:small;
@@ -182,7 +182,7 @@ ul {
       color:rgba(0,0,0,1);
       text-decoration: none;
       margin-top: 24px;
-      margin-left: 33%;
+      margin-left: 42%;
       &:hover{
         text-decoration: none;
         color:rgba(0,0,0,1);
@@ -197,12 +197,12 @@ ul {
   }
   .athlete-menu-item, .fans-menu-item, .business-menu-item, .institutions-menu-item  {
     &:before {
-      height: 6rem;
+      height: 8vh;
       top: 25px;
       position: absolute;
       left: 24px;
       right: 40px;
-      width: 6rem;
+      width: 8vw;
     }
   }
   }
