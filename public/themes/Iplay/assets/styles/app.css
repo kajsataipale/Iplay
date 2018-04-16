@@ -39,7 +39,7 @@
 }
 
 .slide {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .about_wrapper {
@@ -314,6 +314,7 @@
 .home_wrapper {
   background-color: #FFFEFC;
   width: 100vw;
+  height: 100vh;
   margin: 0;
   background-image: url("/themes/Iplay/media/images/Fotboll_Magenta.svg");
   background-position: bottom;
@@ -613,6 +614,86 @@
     width: 21px;
     height: 23px;
     margin-right: 10px;
+  }
+}
+
+.home_slider_title {
+  display: none;
+}
+
+.home_right_column {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .home_wrapper {
+    float: left;
+  }
+
+  .home_header {
+    padding-top: 0;
+  }
+
+  .home_header_text {
+    display: none;
+  }
+
+  .second_button {
+    display: none;
+  }
+
+  .home_slider_title {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    color: #f81b84;
+    font-size: 58px;
+    text-align: center;
+    font-family: 'third_rail';
+  }
+
+  .home_right_column {
+    display: block;
+    float: right;
+    width: 50%;
+  }
+
+  .home_right_column img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-inner {
+    width: 40%;
+    margin-left: 10%;
+  }
+
+  .carousel_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #0e1111;
+    text-align: justify;
+    text-justify: inter-word;
+    height: 200px;
+    font-family: 'helvetica_n_regular';
+  }
+
+  .carousel_content p:nth-child(2),
+  .carousel_content p:nth-child(3) {
+    text-align: right;
+    margin-bottom: 0;
+  }
+
+  .slide {
+    margin-top: 80px;
   }
 }
 
