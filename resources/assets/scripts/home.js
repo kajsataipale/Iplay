@@ -1,6 +1,5 @@
 
 const buttons = document.querySelectorAll('.home_header_button');
-console.log(buttons);
 
 buttons.forEach((element) => {
   element.addEventListener('click', () => {
@@ -38,8 +37,11 @@ function checkElementClass(element){
   else {
     document.querySelector('.slide').classList.remove('notActive');
     backgroundElem.style.backgroundImage = "url('/themes/Iplay/media/images/Fotboll_Magenta.svg')";
-    document.querySelector('.home_slider_title').style.display = 'block';
-    document.querySelector('.home_right_column').style.display = 'block';
+    if (window.innerWidth >= 900) {
+      document.querySelector('.home_slider_title').style.display = 'block';
+      document.querySelector('.home_right_column').style.display = 'block';
+    }
+
   }
   if (!element.classList.contains('third_button')) {
     document.querySelector('.about_wrapper').classList.add('notActive');

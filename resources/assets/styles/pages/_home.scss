@@ -238,6 +238,10 @@
 }
 
 @media only screen and (min-width: 700px) {
+
+}
+
+@media only screen and (min-width: 900px) {
   .home_wrapper{
     float: left;
   }
@@ -262,12 +266,13 @@
   }
 
   .home_right_column{
-    display: block;
+    display: flex;
+    justify-content: center;
     float: right;
     width: 50%;
+    height: 100%;
     img{
       width: 100%;
-      height: 100%;
     }
   }
 
@@ -294,10 +299,6 @@
   .slide{
     margin-top: 80px;
   }
-}
-
-@media only screen and (min-width: 900px) {
-
 
 }
 @media only screen and (min-width: 1100px) {

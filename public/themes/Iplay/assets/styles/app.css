@@ -606,7 +606,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .home_wrapper {
     float: left;
   }
@@ -635,14 +635,19 @@
   }
 
   .home_right_column {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     float: right;
     width: 50%;
+    height: 100%;
   }
 
   .home_right_column img {
     width: 100%;
-    height: 100%;
   }
 
   .carousel-inner {
