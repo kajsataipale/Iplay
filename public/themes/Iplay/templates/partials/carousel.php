@@ -1,5 +1,5 @@
 
-<div class="carousel slide" data-interval="1000" data-ride="carousel">
+<div class="carousel slide" data-interval="5000" data-ride="carousel">
   <div class="carousel-inner">
     <?php
     if(have_rows('slide_quotes')):
