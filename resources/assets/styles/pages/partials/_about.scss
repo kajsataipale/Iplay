@@ -1,12 +1,15 @@
 .about_wrapper{
   margin-top: 30px;
+  margin-bottom: 15vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 .about_element_wrapper{
   display: flex;
   padding-left: 10%;
   padding-right: 5%;
   font-family: 'helvetica_n_regular';
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   img{
     align-self: center;
     height: 25px;
@@ -15,10 +18,10 @@
   p{
     font-size: 16px;
     color: rgba(14,17,17,1);
-    align-self:center;
+    align-self: center;
     margin: 0;
     width: 80%;
-    text-align: justify;
+    text-align: justify center;
     text-justify: inter-word;
     line-height: 1;
   }
@@ -26,5 +29,94 @@
     font-size: 16px;
     font-family: 'helvetica_n_bold';
     margin-bottom: 5px;
+  }
+}
+
+.about_title{
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-family: 'third_rail';
+  color: rgba(248,27,132,1);
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 400px) {
+  .about_wrapper{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F6F6F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20vh;
+  }
+  .footer_text{
+    display: none;
+  }
+  .about_title{
+    display: block;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .about_element_wrapper{
+    width: 44%;
+    display: flex;
+    margin: 3%;
+    padding: 2%;
+    background-color: white;
+    font-family: 'helvetica_n_regular';
+    img{
+      align-self: center;
+      height: auto;
+      width: 20%;
+      margin-right: 4%;
+    }
+    p{
+      font-size: 16px;
+      color: rgba(14,17,17,1);
+      align-self:center;
+      margin: 0;
+      width: 95%;
+      text-align: justify;
+      text-justify: inter-word;
+      line-height: 1;
+    }
+    h2{
+      font-size: 16px;
+      font-family: 'helvetica_n_bold';
+      margin-bottom: 5px;
+    }
+  }
+  .about_title{
+    display: block;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about_wrapper{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .about_element_wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+    align-items: center;
+    img{
+      width: 30%;
+    }
+  }
+  .about_title{
+    display: block;
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .about_title{
+    display: block;
+    font-size: 40px;
   }
 }

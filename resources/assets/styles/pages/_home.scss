@@ -1,6 +1,5 @@
 .home_wrapper{
   background-color: #FFFEFC;
-  min-height: 100vh;
   width: 100vw;
   margin: 0;
   background-image: url('/themes/Iplay/media/images/Fotboll_Magenta.svg');
@@ -36,6 +35,7 @@
     background: #EA8C45;
     transform: skewX(-20deg);
     transition: .2s;
+    cursor: pointer;
     span, img{
       -webkit-transform: skewX(20deg);
       transform: skewX(20deg);
