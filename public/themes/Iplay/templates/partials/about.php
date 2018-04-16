@@ -1,5 +1,6 @@
 
 <div class="about_wrapper notActive">
+  <h1 class="about_title">ABOUT</h1>
   <?php
   if(have_rows('aboutFields_field')):
     while ( have_rows('aboutFields_field') ) : the_row();

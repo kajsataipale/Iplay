@@ -17,17 +17,23 @@ function removeButtonClass(wrapper){
 }
 
 function checkElementClass(element){
+
+  const backgroundElem = document.querySelector('.home_wrapper');
+
   if (!element.classList.contains('first_button')) {
     document.querySelector('.team_wrapper').classList.add('notActive');
+
   }
   else {
     document.querySelector('.team_wrapper').classList.remove('notActive');
   }
   if (!element.classList.contains('second_button')) {
     document.querySelector('.slide').classList.add('notActive');
+    backgroundElem.style.backgroundImage = 'none';
   }
   else {
     document.querySelector('.slide').classList.remove('notActive');
+    backgroundElem.style.backgroundImage = "url('/themes/Iplay/media/images/Fotboll_Magenta.svg')";
   }
   if (!element.classList.contains('third_button')) {
     document.querySelector('.about_wrapper').classList.add('notActive');
