@@ -30,9 +30,14 @@ get_header();
 
 <div class="home_footer">
   <p class="footer_text">GET THE APP NOW</p>
+  <div class="desktop_footer_text">
+    <p>GET THE APP NOW!</p>
+    <p class="small_footer_text">© 2018 All rights reserved. IPY Holding AB</p>
+  </div>
   <div class="home_footer_button_wrap">
     <a href="https://play.google.com/store/apps/details?id=com.iplay" class="home_footer_button">
-      <img src="/themes/Iplay/media/images/android_orange.svg">
+      <img class="mobile_androidicon"src="/themes/Iplay/media/images/android_orange.svg">
+      <img class="desktop_androidicon"src="/themes/Iplay/media/images/android_white.svg">
       <span>GOOGLE PLAY</span>
     </a>
     <a href="https://itunes.apple.com/se/app/iplay-sport/id1068927526?l=en&mt=8" class="home_footer_button">
