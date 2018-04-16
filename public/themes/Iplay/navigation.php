@@ -1,7 +1,7 @@
 <div class="desktopBox"></div>
 <div class="mobileMenu">
   <div class="slogan">
-    <h1>THE ONLY SPORTS APP YOU'ILL EVER NEED!</h1>
+    <h1 class="download_app_desktop">THE ONLY SPORTS APP YOU'ILL EVER NEED!</h1>
   </div>
         <ul>
           <?php wp_nav_menu(['theme_location' => 'primary-menu',]); ?>
@@ -12,6 +12,6 @@
         <div class="rectangle"></div>
         <div class="rectangle2"></div>
   <div class="slogan2">
-    <h1>DOWNLOAD THE APP TODAY!</h1>
+    <h1 class="download_app_desktop">DOWNLOAD THE APP TODAY!</h1>
   </div>
   </div>

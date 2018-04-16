@@ -14,13 +14,15 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 3vh;
+  height: 24px;
   background-color: rgba(248,27,132,1);
   z-index: 2;
 }
 .slogan, .slogan2{
   color: #F6F6F6;
   opacity: 0;
+  height: 0px;
+  width: 0px;
 }
 .athletesDescription{
   display: none;
@@ -52,9 +54,8 @@ ul {
 	height: 40px;
   width: 90px;
 }
-
 .mobileMenu.active{
-  height: 70vh;
+  height: 70.5vh;
   transition: background-color .1s;
   transition: height 1s;
   background-color: #F6F6F6;
@@ -63,7 +64,6 @@ ul {
   z-index: 100;
   position: fixed;
   bottom:105px;
-
   .rectangle{
     position: absolute;
     background-color: rgba(248,27,132,1);
@@ -108,7 +108,6 @@ ul {
     letter-spacing: 2.77px;
     line-height: 58px;
   }
-
   .athletesDescription{
     position: absolute;
     display: block;
@@ -126,7 +125,6 @@ ul {
     letter-spacing: 1.5px;
     line-height: 22px;
   }
-
   ul {
     list-style: none;
     padding: 0;
@@ -169,7 +167,6 @@ ul {
     right: -40px;
     bottom: -20px;
     font-family: 'helvetica_n_regular';
-    // top: 190px;
     text-decoration: underline;
     font-weight: bold;
     font-size:small;
@@ -180,10 +177,6 @@ ul {
     .description-Athletes, .description-Fans, .description-Business, .description-Institutions{
         display: none;
       }
-    // .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
-    //   bottom: 4vh;
-    //   left: 15vw;
-    // }
     }
   @media screen and (min-width: 900px){
     ul li a {
@@ -253,10 +246,6 @@ ul {
   }
   .mobileMenu{
     position: fixed;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // width: 100%;
     top:0;
     height: 2vh;
     background-color: rgba(248,27,132,1);
@@ -265,6 +254,8 @@ ul {
   }
   .slogan, .slogan2{
     display: none;
+    height: 0px;
+    width: 0px;
   }
   .mobileMenu.active{
     height: 90vh;
@@ -294,7 +285,6 @@ ul {
       padding: 0;
       width: 100vh;
       margin: 0;
-      // margin-right: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -311,7 +301,6 @@ ul {
       font-size: 190%;
       font-weight: bold;
       line-height: 34px;
-      // background-color: rgba(255,254,252,0.7);
       text-decoration: none;
       color: rgba(0,0,0,1);
       margin-bottom: 4.41%;
@@ -353,7 +342,6 @@ ul {
       .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
         display: none;
       }
-
     .rectangle{
       display: none;
     }

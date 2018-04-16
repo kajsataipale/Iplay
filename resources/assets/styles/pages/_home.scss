@@ -76,11 +76,11 @@
         justify-content: center;
     }
     .desktop_footer_text{
-      height: 56px;
+      height: auto;
       position: relative;
       margin-right: 4%;
       margin-left: 8%;
-      padding: 0;
+      padding-top: 4%;
       text-align: center;
       color: #FFFEFC;
       font-size: 30px;
@@ -91,7 +91,7 @@
     .small_footer_text{
       font-size: 10px;
       position: relative;
-      top: -25px;
+      top: -30px;
       font-family: 'helvetica_n_regular';
     }
     .footer_text{
@@ -102,49 +102,52 @@
     .home_footer_button_wrap{
       position: fixed;
       bottom: 15px;
-      height: 50px;
-      margin-left: 30%;
+      height: auto;
+      margin-left: 34%;
       width: 44%;
-      // width: 22.78%;
       display: flex;
       justify-content: center;
       align-items: center;
-      // right: 0;
-      // -webkit-transform: skewX(-50deg);
-      // transform: skewX(-50deg);
-
       .home_footer_button{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         height: 50px;
-        width: 200px;
-        font-size: 13.33px;
+        width: 180px;
+        padding: 3%;
+        font-size: 70%;
         text-decoration: none;
       }
       a:nth-child(1) {
         background-color: #FF88C7;
         z-index: 1;
         color: white;
-        clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+        justify-content: flex-start;
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
         margin-right: -50px;
       }
       a:nth-child(2) {
         background-color: #F81B84;
+        justify-content: flex-end;
         z-index: 1;
         color: white;
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
-
-      }
-      span, img{
-        // -webkit-transform: skewX(50deg);
-        // transform: skewX(50deg);
+        clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
       }
       img{
         width: 21px;
         height: 23px;
         margin-right: 10px;
       }
+      @media screen and (min-width: 900px) and (max-width: 1130px){
+          .home_footer_button{
+            width: 34%;
+            font-size: 55%;
+          }
+            img{
+              width: 15%;
+              height: auto;
+            }
+          }
     }
 }
   //mobile
