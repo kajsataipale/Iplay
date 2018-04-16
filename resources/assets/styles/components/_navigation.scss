@@ -29,7 +29,8 @@ ul {
   display: none;
 }
 .GetApp{
-  display: none;
+  opacity: 0;
+  color: #F6F6F6;
 }
 .mobileMenu{
   position: fixed;
@@ -137,26 +138,15 @@ ul {
     justify-content: center;
     align-items: center;
     position: relative;
-
-
   }
   li  {
     position: relative;
     display: flex;
     margin-top: 15px;
     padding: 0;
-    // justify-content: center;
-
-
-    // flex-direction: row;
-    // justify-content: center;
-    // font-family: "Helvetica Neue";
 		height: 27vh;
     width: 45vh;
     font-size: 23.04px;
-    // font-weight: bold;
-    // line-height: 28px;
-    // letter-spacing: 2.16px;
     background-color: #FFFEFC;
     text-decoration: none;
   }
@@ -262,6 +252,11 @@ ul {
   .slogan, .slogan2{
     display: none;
   }
+  ul{
+    opacity: 0;
+    background-color: rgba(240,240,240,1);
+  }
+
   .mobileMenu.active{
     height: 90vh;
     transition: background-color .1s;
@@ -311,15 +306,21 @@ ul {
       color: rgba(0,0,0,1);
       margin-bottom: 4.41%;
       z-index: 100;
+      transition: height 1s, background-color 4s, transform 3s;
+    }
+  ul {
+    opacity: 1;
+    transition: 2s ease-in;
     }
     .GetApp{
+      opacity: 1;
+      transition: 1s ease-in;
       position: relative;
       display: block;
       color: white;
       z-index: 100;
       top: 52px;
       margin-bottom: 50px;
-      // width: 35.95px;
       height: 56px;
       width: 65%;
       color: rgba(248,27,132,1);
@@ -359,7 +360,8 @@ ul {
     li .athlete-menu-item{
         margin-top: 72px;
     }
-    .athlete-menu-item, .fans-menu-item,.business-menu-item, .institutions-menu-item  {
+
+    .athlete-menu-item,.fans-menu-item,.business-menu-item, .institutions-menu-item  {
       &:before {
         height: 3rem;
         position: absolute;
