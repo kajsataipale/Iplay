@@ -660,6 +660,7 @@ ul {
   font-size: small;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  font-family: 'helvetica_n_regular';
 }
 
 .mobileMenu.active .goto-Athletes,
@@ -669,8 +670,9 @@ ul {
   height: 6vh;
   width: 22vh;
   position: absolute;
-  left: 208px;
-  bottom: 16px;
+  right: -40px;
+  bottom: -20px;
+  font-family: 'helvetica_n_regular';
   text-decoration: underline;
   font-weight: bold;
   font-size: small;
@@ -685,14 +687,6 @@ ul {
   .mobileMenu.active .description-Business,
   .mobileMenu.active .description-Institutions {
     display: none;
-  }
-
-  .mobileMenu.active .goto-Athletes,
-  .mobileMenu.active .goto-Fans,
-  .mobileMenu.active .goto-Business,
-  .mobileMenu.active .goto-Institutions {
-    bottom: 2vh;
-    left: 15vw;
   }
 }
 

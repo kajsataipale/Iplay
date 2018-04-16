@@ -160,13 +160,15 @@ ul {
     top: 70px;
     font-size:small;
     align-self: flex-start;
+    font-family: 'helvetica_n_regular';
   }
   .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
     height: 6vh;
     width: 22vh;
     position: absolute;
-    left: 208px;
-    bottom: 16px;
+    right: -40px;
+    bottom: -20px;
+    font-family: 'helvetica_n_regular';
     // top: 190px;
     text-decoration: underline;
     font-weight: bold;
@@ -178,10 +180,10 @@ ul {
     .description-Athletes, .description-Fans, .description-Business, .description-Institutions{
         display: none;
       }
-    .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
-      bottom: 2vh;
-      left: 15vw;
-    }
+    // .goto-Athletes, .goto-Fans, .goto-Business, .goto-Institutions{
+    //   bottom: 4vh;
+    //   left: 15vw;
+    // }
     }
   @media screen and (min-width: 900px){
     ul li a {
