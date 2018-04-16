@@ -266,11 +266,6 @@ ul {
   .slogan, .slogan2{
     display: none;
   }
-  ul{
-    opacity: 0;
-    // background-color:   rgba(240,240,240,1);
-  }
-
   .mobileMenu.active{
     height: 90vh;
     transition: background-color .1s;
@@ -325,10 +320,6 @@ ul {
     }
     li{
       left:0;
-    }
-  ul {
-    opacity: 1;
-    transition: 2s ease-in;
     }
     .GetApp{
       opacity: 1;

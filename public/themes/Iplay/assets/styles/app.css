@@ -250,7 +250,8 @@
   .desktop_footer_text {
     height: 56px;
     position: relative;
-    margin: 0;
+    margin-right: 4%;
+    margin-left: 8%;
     padding: 0;
     text-align: center;
     color: #FFFEFC;
@@ -261,7 +262,7 @@
   }
 
   .small_footer_text {
-    font-size: 13.33px;
+    font-size: 10px;
     position: relative;
     top: -25px;
     font-family: 'helvetica_n_regular';
@@ -277,8 +278,8 @@
     position: fixed;
     bottom: 15px;
     height: 50px;
-    margin-left: 6.18%;
-    width: 640px;
+    margin-left: 30%;
+    width: 44%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -288,7 +289,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    right: 15px;
   }
 
   .home_footer_button_wrap .home_footer_button {
@@ -776,10 +776,6 @@ ul {
     display: none;
   }
 
-  ul {
-    opacity: 0;
-  }
-
   .mobileMenu.active {
     height: 90vh;
     -webkit-transition: background-color .1s;
@@ -866,12 +862,6 @@ ul {
 
   .mobileMenu.active li {
     left: 0;
-  }
-
-  .mobileMenu.active ul {
-    opacity: 1;
-    -webkit-transition: 2s ease-in;
-    transition: 2s ease-in;
   }
 
   .mobileMenu.active .GetApp {
