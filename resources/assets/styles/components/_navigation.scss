@@ -10,11 +10,11 @@ body {
 }
 .desktopBox{
   position: fixed;
-  bottom: 8vh;
+  bottom: 9vh;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 24px;
+  height: 3vh;
   background-color: rgba(248,27,132,1);
   z-index: 2;
 }
@@ -36,7 +36,7 @@ ul {
 }
 .mobileMenu{
   position: fixed;
-  bottom: 8vh;
+  bottom: 9vh;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -49,20 +49,20 @@ ul {
   position: fixed;
   background-color: rgba(248,27,132,1);
   padding: 0;
-  bottom: 8.98vh;
+  bottom: 11.8vh;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	height: 40px;
   width: 90px;
 }
 .mobileMenu.active{
-  height: 82vh;
+  height: 80vh;
   transition: background-color .1s;
   transition: height 1s;
   background-color: #F6F6F6;
   width: 79.17%;
   z-index: 100;
   position: fixed;
-  bottom:10.1vh;
+  bottom:12vh;
   .rectangle{
     position: absolute;
     background-color: rgba(248,27,132,1);
@@ -304,7 +304,6 @@ ul {
       color: rgba(0,0,0,1);
       margin-bottom: 4.41%;
       z-index: 100;
-      transition: height 1s, background-color 4s, transform 3s;
     }
     li{
       left:0;
