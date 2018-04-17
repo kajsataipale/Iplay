@@ -27,14 +27,13 @@ get_header();
       </div>
     </div>
   </div>
-  <h1 class="home_slider_title">The only sport app you’ll ever need!</h1>
-  <div class="home_right_column">
+  <h1 class="home_slider_title home_slider_title_default">The only sport app you’ll ever need!</h1>
+  <div class="home_right_column home_right_column_default">
     <img src="/themes/Iplay/media/images/phoneHand.png">
   </div>
   <?php require('partials/carousel.php'); ?>
   <?php require('partials/about.php'); ?>
   <?php require('partials/team.php'); ?>
-
 
 <div class="home_footer">
   <p class="footer_text">GET THE APP NOW</p>
